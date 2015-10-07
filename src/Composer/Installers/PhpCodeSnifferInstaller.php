@@ -18,14 +18,7 @@ class PhpCodeSnifferInstaller extends BaseInstaller
             throw new \InvalidArgumentException('Package is not installed: "squizlabs/php_codesniffer"');
         }
 
-        $subPaths = ['CodeSniffer'.DIRECTORY_SEPARATOR.'Standards'];
-
-        foreach ($subPaths as $subPath) {
-            $path = $base.DIRECTORY_SEPARATOR.$subPath;
-            if (is_dir($path) && is_readable($path)) {
-                $vars['phpcs_standards_folder'] = $path;
-            }
-        }
+        $vars['phpcs_standards_folder'] = $base.DIRECTORY_SEPARATOR.'CodeSniffer'.DIRECTORY_SEPARATOR.'Standards';
 
         return $vars;
     }
