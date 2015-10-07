@@ -51,6 +51,7 @@ class Installer extends LibraryInstaller
         'october'      => 'OctoberInstaller',
         'oxid'         => 'OxidInstaller',
         'phpbb'        => 'PhpBBInstaller',
+        'phpcs'        => 'PhpCodeSnifferInstaller',
         'pimcore'      => 'PimcoreInstaller',
         'piwik'        => 'PiwikInstaller',
         'ppi'          => 'PPIInstaller',
